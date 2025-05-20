@@ -1,0 +1,5 @@
+locals {
+  order_db_credentials = jsondecode(data.aws_secretsmanager_secret_version.order_db_credentials_secret_version.secret_string)
+  payment_db_credentials = jsondecode(data.aws_secretsmanager_secret_version.payment_db_credentials_secret_version.secret_string)
+  customer_db_credentials = jsondecode(data.aws_secretsmanager_secret_version.customer_db_credentials_secret_version.secret_string)
+}
