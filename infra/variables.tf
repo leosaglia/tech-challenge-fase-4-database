@@ -3,7 +3,7 @@ variable "order_db_credentials" {
   default = {
     username = "postgres"
     password = "postgres"
-    db_name  = "db-order-tc"
+    db_name  = "DBTCorder"
   }
 }
 
@@ -12,7 +12,7 @@ variable "payment_db_credentials" {
   default = {
     username = "postgres"
     password = "postgres"
-    db_name  = "db-payment-tc"
+    db_name  = "DBTCpayment"
   }
 }
 
@@ -21,6 +21,6 @@ variable "customer_db_credentials" {
   default = {
     username = "postgres"
     password = "postgres"
-    db_name  = "db-customer-tc"
+    db_name  = "DBTCcustomer"
   }
 }
