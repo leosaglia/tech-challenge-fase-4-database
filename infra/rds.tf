@@ -28,7 +28,7 @@ resource "aws_db_instance" "order_db_postgres" {
   engine                 = "postgres"
   engine_version         = "13"
   instance_class         = "db.t3.micro"
-  identifier             = "order-tc-db"
+  identifier             = "order-db"
   db_name                = local.order_db_credentials["db_name"]
   username               = local.order_db_credentials["username"]
   password               = local.order_db_credentials["password"]
